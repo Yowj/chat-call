@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.NODE_ENV === "development" ? 5001 : 5002;
 app.use(
   cors({
-    origin: process.env.FRONTEND,
+    origin: "https://chat-call-iota.vercel.app/",
     credentials: true, // allow frontend to send cookies
   })
 );

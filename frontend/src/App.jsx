@@ -26,7 +26,7 @@ const App = () => {
           element={
             isAuthenticated ? (
               isOnboarded ? (
-                <Layout showSideBar={true}>
+                <Layout showSidebar={true}>
                   <HomePage />
                 </Layout>
               ) : (

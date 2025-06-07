@@ -26,6 +26,6 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${process.env.NODE_ENV === "development" ? "http://localhost:5173" : process.env.FRONTEND}`);
+  console.log(`Server is running on port http://localhost:${PORT}`);
   connectDB();
 });

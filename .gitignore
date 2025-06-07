@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Backend specific
+backend/.env
+backend/dist/
+backend/build/
+
+# Frontend specific
+frontend/.env
+frontend/dist/
+frontend/build/
+frontend/.vscode/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
+.qodo/

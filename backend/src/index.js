@@ -11,8 +11,13 @@ const app = express();
 const PORT = process.env.NODE_ENV === "development" ? 5001 : 5002;
 app.use(
   cors({
-    origin: "https://chat-call-iota.vercel.app",
-    credentials: true, // allow frontend to send cookies
+    origin: [
+      "https://chat-call-iota.vercel.app",
+      "http://localhost:5173"  // if using Vite
+    ],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
   })
 );
 app.use(express.json());
